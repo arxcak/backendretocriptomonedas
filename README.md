@@ -54,8 +54,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **URL**: `/auth/login`
 - **Método**: `POST`
 - **Request Headers**:
-- `Content-Type application/json`
-- `Accept application/json`
+- `Content-Type: application/json`
+- `Accept: application/json`
 - **Descripción**: iniciar sesión.
 - **Ejemplo de solicitud**:
 ```json
@@ -76,8 +76,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **URL**: `/auth/register`
 - **Método**: `POST`
 - **Request Headers**:
-- `Content-Type application/json`
-- `Accept application/json`
+- `Content-Type: application/json`
+- `Accept: application/json`
 - **Descripción**: Registrar usuario.
 - **Ejemplo de solicitud**:
 ```json
@@ -107,8 +107,9 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **URL**: `/api/monedas`
 - **Método**: `GET`
 - **Request Headers**:
-- `Content-Type application/json`
-- `Accept application/json`
+- `Content-Type: application/json`
+- `Accept: application/json`
+- `Authorization: Bearer {{token}}`
 - **Descripción**: Devuelve todas las monedas registradas.
 - **Ejemplo de respuesta**:
 ```json
@@ -145,8 +146,9 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **URL**: `/api/monedas`
 - **Método**: `POST`
 - **Request Headers**:
-- `Content-Type application/json`
-- `Accept application/json`
+- `Content-Type: application/json`
+- `Accept: application/json`
+- `Authorization: Bearer {{token}}`
 - **Descripción**: Crea una nueva moneda.
 - **Ejemplo de solicitud**:
 ```json
@@ -177,8 +179,9 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **URL**: `/api/criptomonedas`
 - **Método**: `GET`
 - **Request Headers**:
-- `Content-Type application/json`
-- `Accept application/json`
+- `Content-Type: application/json`
+- `Accept: application/json`
+- `Authorization: Bearer {{token}}`
 - **Descripción**: Devuelve todas las criptomonedas registradas.
 - **Parámetros opcionales**:
   - `moneda`: Filtra las criptomonedas asociadas a una moneda específica.
@@ -236,8 +239,9 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **URL**: `/api/criptomonedas?moneda=Dolar`
 - **Método**: `GET`
 - **Request Headers**:
-- `Content-Type application/json`
-- `Accept application/json`
+- `Content-Type: application/json`
+- `Accept: application/json`
+- `Authorization: Bearer {{token}}`
 - **Descripción**: Devuelve todas las criptomonedas registradas.
 - **Parámetros opcionales**:
   - `moneda`: Filtra las criptomonedas asociadas a una moneda específica.
@@ -285,8 +289,9 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **URL**: `/api/criptomonedas`
 - **Método**: `POST`
 - **Request Headers**:
-- `Content-Type application/json`
-- `Accept application/json`
+- `Content-Type: application/json`
+- `Accept: application/json`
+- `Authorization: Bearer {{token}}`
 - **Descripción**: Crea una nueva criptomoneda.
 - **Ejemplo de solicitud**:
 ```json
@@ -319,8 +324,9 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **URL**: `/api/criptomonedas/{id}`
 - **Método**: `PUT`
 - **Request Headers**:
-- `Content-Type application/json`
-- `Accept application/json`
+- `Content-Type: application/json`
+- `Accept: application/json`
+- `Authorization: Bearer {{token}}`
 - **Descripción**: Actualiza los datos de una criptomoneda existente por ID.
 - **Ejemplo de solicitud**:
 ```json
