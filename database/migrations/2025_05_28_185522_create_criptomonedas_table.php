@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('criptomonedas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('criptomoneda_nombre')->unique();
-            $table->string('criptomoneda_simbolo')->unique();
+            $table->string('criptomoneda_nombre', 255)->unique();
+            $table->string('criptomoneda_simbolo', 10)->unique();
             $table->unsignedBigInteger('moneda_id');
             $table->timestamps();
 

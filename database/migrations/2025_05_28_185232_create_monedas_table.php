@@ -13,8 +13,8 @@ return new class extends Migration
     {
         Schema::create('monedas', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('moneda_nombre')->unique();
-            $table->string('moneda_simbolo')->unique();
+            $table->string('moneda_nombre', 255)->unique();
+            $table->string('moneda_simbolo', 10)->unique();
             $table->timestamps();
         });
     }
