@@ -60,8 +60,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **Ejemplo de solicitud**:
 ```json
 {
-    "email": "usuaetrertrio@example.com",
-    "password": "coetertntraseña"
+    "email": "usuario@example.com",
+    "password": "contraseña"
 }
 ```
 - **Ejemplo de respuesta**:
@@ -82,17 +82,17 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **Ejemplo de solicitud**:
 ```json
 {
-    "name": "arxcaerterterk",
-    "email": "usuaetrertrio@example.com",
-    "password": "coetertntraseña",
+    "name": "arquimedes",
+    "email": "usuario@example.com",
+    "password": "contraseña",
 }
 ```
 - **Ejemplo de respuesta**:
 ```json
 {
     "user": {
-        "name": "arxqwqcaerterterk",
-        "email": "usuawqwetrertrio@example.com",
+        "name": "arquimedes",
+        "email": "usuario@example.com",
         "updated_at": "2025-05-29T03:32:40.000000Z",
         "created_at": "2025-05-29T03:32:40.000000Z",
         "id": 4
@@ -119,23 +119,23 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
     "data": [
         {
             "id": 1,
-            "nombreMoneda": "usv",
-            "simboloMoneda": "GBhzaeeP"
+            "nombreMoneda": "euro",
+            "simboloMoneda": "EUR"
         },
         {
             "id": 2,
-            "nombreMoneda": "Lssss",
-            "simboloMoneda": "GBhzaeseP"
+            "nombreMoneda": "peso argentino",
+            "simboloMoneda": "ARS"
         },
         {
             "id": 3,
-            "nombreMoneda": "Ljkjkkjkj",
-            "simboloMoneda": "GBshzaeseP"
+            "nombreMoneda": "dólar de las Bahamas",
+            "simboloMoneda": "BSD"
         },
         {
             "id": 4,
-            "nombreMoneda": "Lig567567lina",
-            "simboloMoneda": "G5675eP"
+            "nombreMoneda": "dólar beliceño",
+            "simboloMoneda": "BZD"
         }
     ]
 }
@@ -151,8 +151,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **Ejemplo de solicitud**:
 ```json
 {
-    "nombreMoneda": "Lig567567lina",
-    "simboloMoneda": "G5675eP"
+    "nombreMoneda": "dólar beliceño",
+    "simboloMoneda": "BZD"
 }
 ```
 - **Ejemplo de respuesta**:
@@ -160,17 +160,16 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 {
     "success": true,
     "message": "Moneda creada",
-    "description": "Lizg567567lina ha sido creada exitosamente.",
+    "description": "dólar beliceño ha sido creada exitosamente.",
     "data": {
         "moneda": {
-            "id": 5,
-            "nombreMoneda": "Lizg567567lina",
-            "simboloMoneda": "zG5675eP"
+            "id": 1,
+            "nombreMoneda": "dólar beliceño",
+            "simboloMoneda": "BZD"
         }
     }
 }
 ```
-
 
 ### **Criptomonedas**
 
@@ -197,6 +196,36 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
                   "id": 1,
                   "nombreMoneda": "Dólar",
                   "simboloMoneda": "USD"
+              }
+          },
+          {
+              "id": 2,
+              "nombreCritomonena": "Litecoin",
+              "simboloCritomonena": "LTC",
+              "moneda": {
+                  "id": 1,
+                  "nombreMoneda": "Dólar",
+                  "simboloMoneda": "USD"
+              }
+          },
+          {
+              "id": 3,
+              "nombreCritomonena": "BNB",
+              "simboloCritomonena": "BNB",
+              "moneda": {
+                  "id": 1,
+                  "nombreMoneda": "Dólar",
+                  "simboloMoneda": "USD"
+              }
+          },
+          {
+              "id": 4,
+              "nombreCritomonena": "BNB",
+              "simboloCritomonena": "BNB",
+              "moneda": {
+                  "id": 1,
+                  "nombreMoneda": "dólar beliceño",
+                  "simboloMoneda": "BZD"
               }
           }
       ]
@@ -227,6 +256,26 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
                   "nombreMoneda": "Dolar",
                   "simboloMoneda": "USD"
               }
+          },
+          {
+              "id": 2,
+              "nombreCritomonena": "Litecoin",
+              "simboloCritomonena": "LTC",
+              "moneda": {
+                  "id": 1,
+                  "nombreMoneda": "Dólar",
+                  "simboloMoneda": "USD"
+              }
+          },
+          {
+              "id": 3,
+              "nombreCritomonena": "BNB",
+              "simboloCritomonena": "BNB",
+              "moneda": {
+                  "id": 1,
+                  "nombreMoneda": "Dólar",
+                  "simboloMoneda": "USD"
+              }
           }
       ]
   }
@@ -242,8 +291,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **Ejemplo de solicitud**:
 ```json
 {
-    "nombreCriptomoneda": "12dsf567856tterlina",
-    "simboloCriptomoneda": "312345",
+        "nombreCritomonena": "Bitcoin",
+          "simboloCritomonena": "BTC",
     "monedaId": 2
 }
 ```
@@ -258,7 +307,7 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
           "nombreCritomonena": "Bitcoin",
           "simboloCritomonena": "BTC",
           "moneda": {
-              "id": 1,
+              "id": 2,
               "nombreMoneda": "Dólar",
               "simboloMoneda": "USD"
           }
@@ -292,7 +341,7 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
           "nombreCritomonena": "Bitcoin",
           "simboloCritomonena": "BTC",
           "moneda": {
-              "id": 1,
+              "id": 2,
               "nombreMoneda": "Dólar",
               "simboloMoneda": "USD"
           }
