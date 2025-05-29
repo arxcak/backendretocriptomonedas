@@ -29,7 +29,7 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 4. Configura el archivo `.env`:
    - Copia el archivo `.env.example` y renómalo a `.env`.
    - Crear una base de datos, nueva para el proyecto.
-   - Configura las credenciales de la base de datos.
+   - Configura las credenciales de la base de datos en el .env.
 
 5. Genera la clave de la aplicación:
    ```bash
@@ -195,15 +195,15 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
               "simboloCritomonena": "BTC",
               "moneda": {
                   "id": 1,
-                  "nombre": "Dólar",
-                  "simbolo": "USD"
+                  "nombreMoneda": "Dólar",
+                  "simboloMoneda": "USD"
               }
           }
       ]
   }
   ```
 
-#### Listar todas las criptomonedas
+#### Listar todas las criptomonedas por nombre de moneda
 - **URL**: `/api/criptomonedas?moneda=Dolar`
 - **Método**: `GET`
 - **Request Headers**:
@@ -224,8 +224,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
               "simboloCritomonena": "BTC",
               "moneda": {
                   "id": 1,
-                  "nombre": "Dolar",
-                  "simbolo": "USD"
+                  "nombreMoneda": "Dolar",
+                  "simboloMoneda": "USD"
               }
           }
       ]
@@ -239,7 +239,14 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - `Content-Type application/json`
 - `Accept application/json`
 - **Descripción**: Crea una nueva criptomoneda.
-
+- **Ejemplo de solicitud**:
+```json
+{
+    "nombreCriptomoneda": "12dsf567856tterlina",
+    "simboloCriptomoneda": "312345",
+    "monedaId": 2
+}
+```
 - **Ejemplo de respuesta**:
   ```json
   {
@@ -252,8 +259,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
           "simboloCritomonena": "BTC",
           "moneda": {
               "id": 1,
-              "nombre": "Dólar",
-              "simbolo": "USD"
+              "nombreMoneda": "Dólar",
+              "simboloMoneda": "USD"
           }
       }
   }
@@ -262,8 +269,18 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 #### Actualizar una criptomoneda
 - **URL**: `/api/criptomonedas/{id}`
 - **Método**: `PUT`
+- **Request Headers**:
+- `Content-Type application/json`
+- `Accept application/json`
 - **Descripción**: Actualiza los datos de una criptomoneda existente por ID.
-
+- **Ejemplo de solicitud**:
+```json
+{
+    "nombreCriptomoneda": "12dsf567856tterlina",
+    "simboloCriptomoneda": "312345",
+    "monedaId": 2
+}
+```
 - **Ejemplo de respuesta**:
   ```json
   {
