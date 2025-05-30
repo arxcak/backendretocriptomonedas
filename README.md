@@ -193,8 +193,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
       "data": [
           {
               "id": 1,
-              "nombreCritomonena": "Bitcoin",
-              "simboloCritomonena": "BTC",
+              "nombreCriptomoneda": "Bitcoin",
+              "simboloCriptomoneda": "BTC",
               "moneda": {
                   "id": 1,
                   "nombreMoneda": "Dólar",
@@ -203,8 +203,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
           },
           {
               "id": 2,
-              "nombreCritomonena": "Litecoin",
-              "simboloCritomonena": "LTC",
+              "nombreCriptomoneda": "Litecoin",
+              "simboloCriptomoneda": "LTC",
               "moneda": {
                   "id": 1,
                   "nombreMoneda": "Dólar",
@@ -213,8 +213,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
           },
           {
               "id": 3,
-              "nombreCritomonena": "BNB",
-              "simboloCritomonena": "BNB",
+              "nombreCriptomoneda": "BNB",
+              "simboloCriptomoneda": "BNB",
               "moneda": {
                   "id": 1,
                   "nombreMoneda": "Dólar",
@@ -223,8 +223,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
           },
           {
               "id": 4,
-              "nombreCritomonena": "BNB",
-              "simboloCritomonena": "BNB",
+              "nombreCriptomoneda": "BNB",
+              "simboloCriptomoneda": "BNB",
               "moneda": {
                   "id": 1,
                   "nombreMoneda": "dólar beliceño",
@@ -253,8 +253,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
       "data": [
           {
               "id": 1,
-              "nombreCritomonena": "Bitcoin",
-              "simboloCritomonena": "BTC",
+              "nombreCriptomoneda": "Bitcoin",
+              "simboloCriptomoneda": "BTC",
               "moneda": {
                   "id": 1,
                   "nombreMoneda": "Dolar",
@@ -263,8 +263,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
           },
           {
               "id": 2,
-              "nombreCritomonena": "Litecoin",
-              "simboloCritomonena": "LTC",
+              "nombreCriptomoneda": "Litecoin",
+              "simboloCriptomoneda": "LTC",
               "moneda": {
                   "id": 1,
                   "nombreMoneda": "Dólar",
@@ -273,8 +273,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
           },
           {
               "id": 3,
-              "nombreCritomonena": "BNB",
-              "simboloCritomonena": "BNB",
+              "nombreCriptomoneda": "BNB",
+              "simboloCriptomoneda": "BNB",
               "moneda": {
                   "id": 1,
                   "nombreMoneda": "Dólar",
@@ -295,29 +295,29 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
 - **Descripción**: Crea una nueva criptomoneda.
 - **Ejemplo de solicitud**:
 ```json
-{
-        "nombreCritomonena": "Bitcoin",
-          "simboloCritomonena": "BTC",
-    "monedaId": 2
-}
+    {
+        "nombreCriptomoneda": "Bitcoin",
+        "simboloCriptomoneda": "BTC",
+        "monedaId": 2
+    }
 ```
 - **Ejemplo de respuesta**:
   ```json
-  {
+    {
       "success": true,
       "message": "Criptomoneda creada",
       "description": "Bitcoin ha sido creada exitosamente.",
       "data": {
           "id": 1,
-          "nombreCritomonena": "Bitcoin",
-          "simboloCritomonena": "BTC",
+          "nombreCriptomoneda": "Bitcoin",
+          "simboloCriptomoneda": "BTC",
           "moneda": {
               "id": 2,
               "nombreMoneda": "Dólar",
               "simboloMoneda": "USD"
           }
       }
-  }
+    }
   ```
 
 #### Actualizar una criptomoneda
@@ -344,8 +344,8 @@ Este proyecto es una API para gestionar criptomonedas y monedas asociadas. Permi
       "description": "Bitcoin ha sido editada exitosamente.",
       "data": {
           "id": 1,
-          "nombreCritomonena": "Bitcoin",
-          "simboloCritomonena": "BTC",
+          "nombreCriptomoneda": "Bitcoin",
+          "simboloCriptomoneda": "BTC",
           "moneda": {
               "id": 2,
               "nombreMoneda": "Dólar",
